@@ -1,0 +1,39 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script>
+	$(document).ready(function(){
+		$("#city").click(function(){
+			var vcity = $("#city").val();
+			
+			
+			$.get("proses.php",
+			{
+				city: vcity
+			}, function(data){
+					$("#user_input").html(data);
+			});
+			;
+		});
+	});
+	</script>
+</head>
+<body> 
+<h2>Data Costumer</h2>
+
+<table>
+	<tr>
+		<td valign="top"><select name="city" id="city">
+			<option value="none">--Select a city--</option>
+			<option value="Michael Morgan">Michael Morgan</option>
+			<option value="Thomas Down">Thomas Down</option>
+			<option value="Pruitt, et al.">Pruitt, et al.</option>
+			<option value="Thomas Schenk">Thomas Schenk</option>
+			</select>
+		</td>
+	</tr>
+</table>
+<div id="user_input"></div>
+</body>
+</html>
