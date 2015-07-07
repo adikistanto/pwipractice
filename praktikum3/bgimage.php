@@ -3,6 +3,7 @@
 		<title>bg image</title>
 		<style type="text/css">
 			body{color :red;background:url(../images/maskot.png)}
+                </style>
 	</head>
 	<body>
 		<center>

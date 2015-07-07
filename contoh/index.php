@@ -30,7 +30,7 @@
 		}
 		#tabajax tr td{
 			padding: 8px;
-			#text-transform:capitalize;
+			text-transform:capitalize;
 			border:1px solid #d1d1d1;
 		}
 		.head td{
